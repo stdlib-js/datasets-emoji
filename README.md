@@ -20,7 +20,7 @@ limitations under the License.
 
 # Emoji
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > An emoji database.
 
@@ -179,8 +179,8 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/emoji-code-picto`][@stdlib/datasets/emoji-code-picto]: emoji codes and pictographs.
--   [`@stdlib/datasets/emoji-picto-code`][@stdlib/datasets/emoji-picto-code]: emoji pictographs and codes.
+-   <span class="package-name">[`@stdlib/datasets/emoji-code-picto`][@stdlib/datasets/emoji-code-picto]</span><span class="delimiter">: </span><span class="description">emoji codes and pictographs.</span>
+-   <span class="package-name">[`@stdlib/datasets/emoji-picto-code`][@stdlib/datasets/emoji-picto-code]</span><span class="delimiter">: </span><span class="description">emoji pictographs and codes.</span>
 
 </section>
 
@@ -226,8 +226,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-emoji/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-emoji?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/datasets-emoji.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/datasets-emoji/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
