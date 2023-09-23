@@ -18,23 +18,119 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # Emoji
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > An emoji database.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/datasets-emoji
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+</section>
 
+<section class="usage">
+
+## Usage
+
+```javascript
+var emoji = require( '@stdlib/datasets-emoji' );
+```
+
+#### emoji()
+
+Returns an emoji database.
+
+```javascript
+var data = emoji();
+// returns [ {...}, ... ]
+```
+
+Each element in the returned database has the following fields:
+
+-   **group**: emoji group (illustrative); e.g., `'Smileys & Emotion'`.
+-   **subgroup**: emoji subgroup (illustrative); e.g., `'face-smiling'`.
+-   **codepoints**: list of one or more hex code points, separated by spaces; e.g., `'1F600'`.
+-   **hash**: hash value used to match related emoji.
+-   **status**: indicates whether an emoji element is missing one or more emoji presentation selectors. Possible values: `'fully-qualified'`, `'minimally-qualified'`, `'unqualified'`.
+-   **emoji**: rendered emoji; e.g., `'😀'`.
+-   **short_name**: CLDR short name; e.g., `'grinning face'`.
+-   **description**: short description (often matching the CLDR short name, but omitting skin tones, hair styles, et cetera).
+-   **aliases**: an `array` of emoji aliases (i.e., common names used to refer to an emoji).
+-   **keywords**: an `array` of keywords related to an emoji.
+-   **codes**: an `array` of emoji codes (i.e., convenient character sequences used within text to refer to an emoji); e.g., `':grinning:'` and `':call_me_hand::skin-tone-5:'`.
+
+In addition, for those emoji supporting skin tones, an element may have the following field:
+
+-   **skin_tones**: an `array` of skin tone modifiers based on the Fitzpatrick scale; e.g., `'skin-tone-2'`.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+<!-- TODO: more creative example. -->
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var emoji = require( '@stdlib/datasets-emoji' );
+
+var data;
+var len;
+var idx;
+var d;
+var i;
+
+data = emoji();
+len = data.length;
+
+// Select random emoji...
+for ( i = 0; i < 100; i++ ) {
+    idx = discreteUniform( 0, len-1 );
+    d = data[ idx ];
+    console.log( d.emoji + ' => ' + d.codes[ 0 ] );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -52,7 +148,7 @@ npm install -g @stdlib/datasets-emoji-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: emoji [options]
@@ -69,13 +165,13 @@ Options:
 
 <section class="notes">
 
-## Notes
+### Notes
 
 -   Data is written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ emoji
@@ -101,11 +197,12 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 <section class="related">
 
+* * *
+
 ## See Also
 
--   <span class="package-name">[`@stdlib/datasets-emoji`][@stdlib/datasets-emoji]</span><span class="delimiter">: </span><span class="description">emoji.</span>
--   <span class="package-name">[`@stdlib/datasets-emoji-cli-code-picto`][@stdlib/datasets/emoji-code-picto]</span><span class="delimiter">: </span><span class="description">emoji codes and pictographs.</span>
--   <span class="package-name">[`@stdlib/datasets-emoji-cli-picto-code`][@stdlib/datasets/emoji-picto-code]</span><span class="delimiter">: </span><span class="description">emoji pictographs and codes.</span>
+-   <span class="package-name">[`@stdlib/datasets-emoji-code-picto`][@stdlib/datasets/emoji-code-picto]</span><span class="delimiter">: </span><span class="description">emoji codes and pictographs.</span>
+-   <span class="package-name">[`@stdlib/datasets-emoji-picto-code`][@stdlib/datasets/emoji-picto-code]</span><span class="delimiter">: </span><span class="description">emoji pictographs and codes.</span>
 
 </section>
 
@@ -124,7 +221,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -142,11 +239,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-emoji-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/datasets-emoji-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-emoji.svg
+[npm-url]: https://npmjs.org/package/@stdlib/datasets-emoji
 
-[test-image]: https://github.com/stdlib-js/datasets-emoji/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/datasets-emoji/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/datasets-emoji/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/datasets-emoji/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-emoji/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-emoji?branch=main
