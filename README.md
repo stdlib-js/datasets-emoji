@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@esm/index.mjs';
+import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@v0.2.0-esm/index.mjs';
 ```
 
 #### emoji()
@@ -91,7 +91,7 @@ In addition, for those emoji supporting skin tones, an element may have the foll
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@esm/index.mjs';
+import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@v0.2.0-esm/index.mjs';
 
 var data;
 var len;
