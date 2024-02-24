@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-emoji/tags). For example,
+
+```javascript
 import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@v0.2.1-deno/mod.js';
 ```
 
@@ -86,7 +91,7 @@ In addition, for those emoji supporting skin tones, an element may have the foll
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@v0.2.1-deno/mod.js';
+import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@deno/mod.js';
 
 var data;
 var len;
