@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-emoji/tags). For example,
+
+```javascript
 import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@v0.2.2-esm/index.mjs';
 ```
 
@@ -91,7 +96,7 @@ In addition, for those emoji supporting skin tones, an element may have the foll
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@v0.2.2-esm/index.mjs';
+import emoji from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-emoji@esm/index.mjs';
 
 var data;
 var len;
