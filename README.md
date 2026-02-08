@@ -156,16 +156,16 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-emoji-cli.svg
 [npm-url]: https://npmjs.org/package/@stdlib/datasets-emoji-cli
 
-[test-image]: https://github.com/stdlib-js/datasets-emoji/actions/workflows/test.yml/badge.svg?branch=v0.2.3
-[test-url]: https://github.com/stdlib-js/datasets-emoji/actions/workflows/test.yml?query=branch:v0.2.3
+[test-image]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/actions/workflows/test.yml/badge.svg?branch=v0.2.3
+[test-url]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/actions/workflows/test.yml?query=branch:v0.2.3
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-emoji/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/datasets-emoji?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-emoji@v0.2.3/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/datasets-emoji@v0.2.3?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/datasets-emoji.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/datasets-emoji/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/datasets-emoji@v0.2.3.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/datasets-emoji@v0.2.3/main
 
 -->
 
@@ -176,20 +176,20 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
-[cli-section]: https://github.com/stdlib-js/datasets-emoji#cli
-[cli-url]: https://github.com/stdlib-js/datasets-emoji/tree/cli
-[@stdlib/datasets-emoji]: https://github.com/stdlib-js/datasets-emoji/tree/main
+[cli-section]: https://github.com/stdlib-js/datasets-emoji@v0.2.3#cli
+[cli-url]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/tree/cli
+[@stdlib/datasets-emoji]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/datasets-emoji/tree/deno
-[deno-readme]: https://github.com/stdlib-js/datasets-emoji/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/datasets-emoji/tree/umd
-[umd-readme]: https://github.com/stdlib-js/datasets-emoji/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/datasets-emoji/tree/esm
-[esm-readme]: https://github.com/stdlib-js/datasets-emoji/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/datasets-emoji/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/tree/deno
+[deno-readme]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/tree/umd
+[umd-readme]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/tree/esm
+[esm-readme]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/datasets-emoji@v0.2.3/blob/main/branches.md
 
 [pddl-1.0]: http://opendatacommons.org/licenses/pddl/1.0/
 
@@ -201,9 +201,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/datasets/emoji-code-picto]: https://github.com/stdlib-js/datasets-emoji-code-picto
+[@stdlib/datasets/emoji-code-picto]: https://github.com/stdlib-js/datasets-emoji@v0.2.3-code-picto
 
-[@stdlib/datasets/emoji-picto-code]: https://github.com/stdlib-js/datasets-emoji-picto-code
+[@stdlib/datasets/emoji-picto-code]: https://github.com/stdlib-js/datasets-emoji@v0.2.3-picto-code
 
 <!-- </related-links> -->
 
